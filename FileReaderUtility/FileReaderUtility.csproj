@@ -52,10 +52,11 @@
     <Compile Include="FileReaderUtilityForm.Designer.cs">
       <DependentUpon>FileReaderUtilityForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\UFile.cs" />
-    <Compile Include="Model\UFileReader.cs" />
-    <Compile Include="Model\UTextReader.cs" />
-    <Compile Include="Model\UXmlReader.cs" />
+    <Compile Include="Helpers\Base64.cs" />
+    <Compile Include="Helpers\UFile.cs" />
+    <Compile Include="Helpers\UFileReader.cs" />
+    <Compile Include="Helpers\UTextReader.cs" />
+    <Compile Include="Helpers\UXmlReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FileReaderUtilityForm.resx">

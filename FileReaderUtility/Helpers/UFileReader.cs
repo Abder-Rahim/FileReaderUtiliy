@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace FileReaderUtility.Model
+namespace FileReaderUtility.Helpers
 {
     /// <summary>
     /// Base class for specialized reading files classes
@@ -11,6 +11,7 @@ namespace FileReaderUtility.Model
         #region Private Members
 
         protected Stream fileStream;
+        protected Boolean fileEncoded;
 
         #endregion
 
@@ -22,14 +23,16 @@ namespace FileReaderUtility.Model
         /// <summary>
         /// Constructor for the base class
         /// </summary>
-        /// <param name=fs>File stream to read</param>
-        public UFileReader(Stream fs)
+        /// <param name=fs>Specifies the file stream to read</param>
+        /// <param name=encoded>Specifies whether the file is encoded or not</param>
+        public UFileReader(Stream fs, Boolean encoded)
         {
             if (fs == null || fs.Length == 0)
             {
-                throw new Exception("The file is empty");
+                throw new Exception("File is empty!");
             }
             fileStream = fs;
+            fileEncoded = encoded;
         }
 
         #endregion

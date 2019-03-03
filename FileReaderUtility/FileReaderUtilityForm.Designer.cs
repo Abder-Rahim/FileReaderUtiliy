@@ -33,6 +33,7 @@
             this.btnSelecTexFile = new System.Windows.Forms.Button();
             this.lblFilePath = new System.Windows.Forms.Label();
             this.btnSelecXmlFile = new System.Windows.Forms.Button();
+            this.chkDecode = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtFileContent
@@ -84,11 +85,22 @@
             this.btnSelecXmlFile.UseVisualStyleBackColor = true;
             this.btnSelecXmlFile.Click += new System.EventHandler(this.btnSelecXmlFile_Click);
             // 
+            // chkDecode
+            // 
+            this.chkDecode.AutoSize = true;
+            this.chkDecode.Location = new System.Drawing.Point(10, 78);
+            this.chkDecode.Name = "chkDecode";
+            this.chkDecode.Size = new System.Drawing.Size(102, 17);
+            this.chkDecode.TabIndex = 4;
+            this.chkDecode.Text = "Decode base64";
+            this.chkDecode.UseVisualStyleBackColor = true;
+            // 
             // FileReaderUtilityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.chkDecode);
             this.Controls.Add(this.btnSelecXmlFile);
             this.Controls.Add(this.lblFilePath);
             this.Controls.Add(this.btnSelecTexFile);
@@ -107,6 +119,7 @@
         private System.Windows.Forms.Button btnSelecTexFile;
         private System.Windows.Forms.Label lblFilePath;
         private System.Windows.Forms.Button btnSelecXmlFile;
+        private System.Windows.Forms.CheckBox chkDecode;
     }
 }
 

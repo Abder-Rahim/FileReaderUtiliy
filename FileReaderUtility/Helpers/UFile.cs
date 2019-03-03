@@ -1,4 +1,4 @@
-﻿namespace FileReaderUtility.Model
+﻿namespace FileReaderUtility.Helpers
 {
     class UFile
     {
@@ -14,9 +14,9 @@
         #region Public Methods
 
         /// <summary>
-        /// Get the content of the file
+        /// Get content of the file
         /// </summary>
-        /// <returns>Return the content of the stream</returns>
+        /// <returns>Return the content of the given file in a string</returns>
         public string GetFileContent(UFileReader file)
         {
             return file.Content();

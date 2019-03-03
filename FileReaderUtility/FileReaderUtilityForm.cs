@@ -1,28 +1,12 @@
-﻿using FileReaderUtility.Model;
+﻿using FileReaderUtility.Helpers;
 using System;
-using System.IO;
 using System.Windows.Forms;
-using System.Xml;
-using System.Xml.Linq;
-using System.Text;
 
-#region Private Members
-
-#endregion
-#region Public Properties
-
-#endregion
-
-#region Constructors
-
-#endregion
-#region Public Methods
-
-#endregion
 namespace FileReaderUtility
 {
     public partial class FileReaderUtilityForm : Form
     {
+
         public FileReaderUtilityForm()
         {
             InitializeComponent();
@@ -55,7 +39,7 @@ namespace FileReaderUtility
 
                         // Load the text stream in a textbox
                         UFile uFile = new UFile();
-                        UTextReader tr = new UTextReader(fileStream);
+                        UTextReader tr = new UTextReader(fileStream, chkDecode.Checked);
                         fileContent = uFile.GetFileContent(tr);
                         txtFileContent.Text = fileContent;
                     }
@@ -94,7 +78,7 @@ namespace FileReaderUtility
 
                         // Load the XML stream in a textbox
                         UFile uFile = new UFile();
-                        UXmlReader xmlReader = new UXmlReader(fileStream);
+                        UXmlReader xmlReader = new UXmlReader(fileStream, chkDecode.Checked);
                         fileContent = uFile.GetFileContent(xmlReader);
                         txtFileContent.Text = fileContent;
                     }
