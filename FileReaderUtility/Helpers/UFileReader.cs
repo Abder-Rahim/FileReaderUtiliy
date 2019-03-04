@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* 
+ Date : 03/03/2019
+ Author : developpeur-csharp.com
+ Project : FileReaderUtility
+*/
+
+using System;
 using System.IO;
 
 namespace FileReaderUtility.Helpers

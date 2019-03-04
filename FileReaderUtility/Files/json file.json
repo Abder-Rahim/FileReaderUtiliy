@@ -1,33 +1,29 @@
 {
   "planete": {
-    "nom": "Mars", 
+    "name": "Mars", 
     "type": "planète rocheuse", 
-    "titre": {
-      "nom": "Demi-grand axe",
+    "titre1": {
+      "name": "Demi-grand axe",
       "description": "227 936 637 km"
     },
-    "titre": {
-      "nom": "Périhélie",
+    "titre2": {
+      "name": "Périhélie",
       "description": "206 644 545 km"
     },
-    "titre": {
-      "nom": "Circonférence orbitale",
-      "description": "1 429 038 772 km"
-    },
-    "titre": {
-      "nom": "Superficie",
+    "titre3": {
+      "name": "Superficie",
       "description": "144 798 500 km^2"
     },
-    "titre": {
-      "nom": "Volume",
+    "titre4": {
+      "name": "Volume",
       "description": "163,18×10^9 km^3"
     },
-    "titre": {
-      "nom": "Masse",
+    "titre5": {
+      "name": "Masse",
       "description": "641,85×10^21 kg"
     },
     "section": {
-      "nom": "Exploration",
+      "name": "Exploration",
       "description": "
 Avant le survol de Mars par Mariner 4 en 1965, on pensait qu\'il s\'y trouvait de l\'eau liquide en surface et que des formes de vie similaires à celles existant sur Terre pouvaient s\'y être développées, thème très fécond en science-fiction. Les variations saisonnières d\'albédo à la surface de la planète étaient attribuées à de la végétation, tandis que des formations rectilignes perçues dans les lunettes astronomiques et les télescopes de l\'époque étaient interprétées, notamment par l\'astronome amateur américain Percival Lowell, comme des canaux d\'irrigation traversant des étendues désertiques avec de l\'eau issue des calottes polaires. Toutes ces spéculations ont été balayées par les sondes spatiales qui ont étudié Mars : dès 1965, Mariner 4 permit de découvrir une planète dépourvue de champ magnétique global, avec une surface cratérisée rappelant celle de la Lune, et une atmosphère ténue.
 

@@ -1,4 +1,10 @@
-﻿namespace FileReaderUtility.Helpers
+﻿/* 
+ Date : 03/03/2019
+ Author : developpeur-csharp.com
+ Project : FileReaderUtility
+*/
+
+namespace FileReaderUtility.Helpers
 {
     class UFile
     {

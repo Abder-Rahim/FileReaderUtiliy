@@ -31,9 +31,9 @@
             this.txtFileContent = new System.Windows.Forms.TextBox();
             this.ofdOpen = new System.Windows.Forms.OpenFileDialog();
             this.btnSelecTexFile = new System.Windows.Forms.Button();
-            this.lblFilePath = new System.Windows.Forms.Label();
             this.btnSelecXmlFile = new System.Windows.Forms.Button();
             this.chkDecode = new System.Windows.Forms.CheckBox();
+            this.btnSelecJsonFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtFileContent
@@ -65,14 +65,6 @@
             this.btnSelecTexFile.UseVisualStyleBackColor = true;
             this.btnSelecTexFile.Click += new System.EventHandler(this.btnSelecTexFile_Click);
             // 
-            // lblFilePath
-            // 
-            this.lblFilePath.AutoSize = true;
-            this.lblFilePath.Location = new System.Drawing.Point(12, 111);
-            this.lblFilePath.Name = "lblFilePath";
-            this.lblFilePath.Size = new System.Drawing.Size(0, 13);
-            this.lblFilePath.TabIndex = 2;
-            // 
             // btnSelecXmlFile
             // 
             this.btnSelecXmlFile.Dock = System.Windows.Forms.DockStyle.Top;
@@ -88,21 +80,33 @@
             // chkDecode
             // 
             this.chkDecode.AutoSize = true;
-            this.chkDecode.Location = new System.Drawing.Point(10, 78);
+            this.chkDecode.Location = new System.Drawing.Point(10, 114);
             this.chkDecode.Name = "chkDecode";
             this.chkDecode.Size = new System.Drawing.Size(102, 17);
             this.chkDecode.TabIndex = 4;
             this.chkDecode.Text = "Decode base64";
             this.chkDecode.UseVisualStyleBackColor = true;
             // 
+            // btnSelecJsonFile
+            // 
+            this.btnSelecJsonFile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSelecJsonFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelecJsonFile.Location = new System.Drawing.Point(0, 72);
+            this.btnSelecJsonFile.Name = "btnSelecJsonFile";
+            this.btnSelecJsonFile.Size = new System.Drawing.Size(800, 36);
+            this.btnSelecJsonFile.TabIndex = 5;
+            this.btnSelecJsonFile.Text = "Select your Json file";
+            this.btnSelecJsonFile.UseVisualStyleBackColor = true;
+            this.btnSelecJsonFile.Click += new System.EventHandler(this.btnSelecJsonFile_Click);
+            // 
             // FileReaderUtilityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSelecJsonFile);
             this.Controls.Add(this.chkDecode);
             this.Controls.Add(this.btnSelecXmlFile);
-            this.Controls.Add(this.lblFilePath);
             this.Controls.Add(this.btnSelecTexFile);
             this.Controls.Add(this.txtFileContent);
             this.Name = "FileReaderUtilityForm";
@@ -117,9 +121,9 @@
         private System.Windows.Forms.TextBox txtFileContent;
         private System.Windows.Forms.OpenFileDialog ofdOpen;
         private System.Windows.Forms.Button btnSelecTexFile;
-        private System.Windows.Forms.Label lblFilePath;
         private System.Windows.Forms.Button btnSelecXmlFile;
         private System.Windows.Forms.CheckBox chkDecode;
+        private System.Windows.Forms.Button btnSelecJsonFile;
     }
 }
 
